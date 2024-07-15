@@ -327,11 +327,11 @@
     setTimeout(() => {
       headerTop.classList.add('show');
       headerBottom.classList.add('show');
-    }, 200);
+    });
 
     setTimeout(() => {
       headerContent.classList.add('show');
-    }, 1200);
+    }, 1000);
     sections.forEach(section => {
         observer.observe(section);
     });
