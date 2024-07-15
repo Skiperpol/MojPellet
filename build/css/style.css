@@ -998,6 +998,7 @@ video {
   .sm\:text-150px {
     font-size: 150px;
     line-height: 1;
+    margin-bottom: 0px;
   }
 
   .sm\:text-34px {
