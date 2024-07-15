@@ -305,10 +305,7 @@
       }
     </script>
     <script type="module">
-      window.addEventListener('beforeunload', function() {
-    window.scrollTo(0, 0);
-});
-
+      
 
       document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll('.section');
@@ -327,16 +324,22 @@
         threshold: 0.1
     });
 
-    headerTop.classList.add('show');
-    headerBottom.classList.add('show');
+    setTimeout(() => {
+      headerTop.classList.add('show');
+      headerBottom.classList.add('show');
+    }, 200);
 
     setTimeout(() => {
       headerContent.classList.add('show');
-    }, 1000);
+    }, 1200);
     sections.forEach(section => {
         observer.observe(section);
     });
 });
+window.addEventListener('beforeunload', function() {
+    window.scrollTo(0, 0);
+});
+
     </script>
   </body>
 </html>
