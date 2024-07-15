@@ -139,8 +139,18 @@
   height: 460px;
 }
 
-.h-100vh-268px {
-  height: calc(100vh - 268px);
+.h-100vh-300px {
+  height: calc(100vh - 300px);
+}
+
+.h-100vh-236px {
+  height: calc(100vh - 236px);
+}
+
+@media (min-width: 1024px) {
+  .lg\:h-100vh-300px {
+    height: calc(100vh - 300px);
+  }
 }
 
 @media (min-width: 640px) {

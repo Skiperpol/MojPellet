@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mój pellet</title>
     <link rel="stylesheet" href="build/css/style.css" />
-    <link rel="icon" href="build/images/Herb.svg" type="image/x-icon">
+    <link rel="icon" href="build/images/Herb.svg" type="image/x-icon" />
   </head>
   <body class="font-times text-white">
     <div id="header-top" class="w-full">
@@ -33,7 +33,10 @@
         </div>
       </div>
     </div>
-    <div id="header-content" class="h-100vh-268px flex w-full flex-row pt-10 lg:pt-0 z-10 min-h-450px">
+    <div
+      id="header-content"
+      class="h-100vh-236px lg:h-100vh-300px min-h-450px z-10 flex w-full flex-row pt-10 lg:pt-0"
+    >
       <div class="flex w-full items-center justify-center lg:w-1/2">
         <div class="font-bold text-black">
           <div class="sm:text-150px text-100px">MÓJ</div>
@@ -42,30 +45,77 @@
           <div class="sm:text-34px text-22px">PREMIUM QUALITY</div>
         </div>
       </div>
-      <div class="hidden w-1/2 translate-y-20 items-end justify-center lg:flex z-10">
-        <img class="overflow-hidden" src="build/images/Drzewo.svg" alt="drzewo" />
+      <div
+        class="z-10 hidden w-1/2 translate-y-20 items-end justify-center lg:flex"
+      >
+        <img
+          class="overflow-hidden"
+          src="build/images/Drzewo.svg"
+          alt="drzewo"
+        />
       </div>
     </div>
-    <div
-      id="header-bottom" class="bg-main-red flex h-28 w-full justify-center lg:justify-normal z-0"
-    >
-      <div class="mx-4 flex h-full w-20 items-center justify-center">
-        <div class="border-3 h-14 w-24 min-w-24 border-black">
-          <div class="h-1/2 w-full bg-white"></div>
-          <div class="bg-red h-1/2 w-full"></div>
+    <div id="header-bottom">
+      <div class="block text-black lg:hidden">
+        <!-- block lg:hidden  -->
+        <div class="bg-main-red h-2 w-full"></div>
+        <div
+          class="scroller h-16 w-full overflow-hidden bg-white text-2xl"
+          data-speed="fast"
+        >
+          <ul class="scroller__inner flex h-full w-full items-center font-bold">
+            <li>AKTUALNA CENA: 1200ZŁ*</li>
+            <li>DZWOŃ ŚMIAŁO: <a href="tel:+48783332353">783 33 23 53</a></li>
+            <li>AKTUALNA CENA: 1200ZŁ*</li>
+            <li>DZWOŃ ŚMIAŁO: <a href="tel:+48783332353">783 33 23 53</a></li>
+            <li>AKTUALNA CENA: 1200ZŁ*</li>
+            <li>DZWOŃ ŚMIAŁO: <a href="tel:+48783332353">783 33 23 53</a></li>
+            <li>AKTUALNA CENA: 1200ZŁ*</li>
+            <li>DZWOŃ ŚMIAŁO: <a href="tel:+48783332353">783 33 23 53</a></li>
+          </ul>
         </div>
+        <div class="bg-main-red h-2 w-full"></div>
       </div>
       <div
-        class="line-height flex h-full w-auto items-center text-xs font-bold md:text-sm lg:text-base"
+        class="bg-main-red z-0 flex h-36 w-full justify-center lg:justify-normal"
       >
-        WYPRODUKOWANE W POLSCE<br />
-        Z POSLKIEGO SUROWCA <br />
-        W POLSKIEJ FABRYCE - 100% POLSKIEGO KAPITAŁU<br />
-        DYSTRYBUOWANE PRZEZ POLSKĄ FIRMĘ
+        <div class="mx-4 flex h-full w-20 items-center justify-center">
+          <div class="border-3 h-14 w-24 min-w-24 border-black">
+            <div class="h-1/2 w-full bg-white"></div>
+            <div class="bg-red h-1/2 w-full"></div>
+          </div>
+        </div>
+        <div
+          class="line-height flex h-full w-auto items-center p-4 text-xs font-bold md:text-sm lg:text-base"
+        >
+          WYPRODUKOWANE W POLSCE<br />
+          Z POSLKIEGO SUROWCA <br />
+          W POLSKIEJ FABRYCE - 100% POLSKIEGO KAPITAŁU<br />
+          DYSTRYBUOWANE PRZEZ POLSKĄ FIRMĘ
+        </div>
+      </div>
+      <div class="hidden text-black lg:block">
+        <div class="bg-main-red h-2 w-full"></div>
+        <div
+          class="scroller h-16 w-full overflow-hidden bg-white text-2xl"
+          data-speed="fast"
+        >
+          <ul class="scroller__inner flex h-full w-full items-center font-bold">
+            <li>AKTUALNA CENA: 1200ZŁ*</li>
+            <li>DZWOŃ ŚMIAŁO: <a href="tel:+48783332353">783 33 23 53</a></li>
+            <li>AKTUALNA CENA: 1200ZŁ*</li>
+            <li>DZWOŃ ŚMIAŁO: <a href="tel:+48783332353">783 33 23 53</a></li>
+            <li>AKTUALNA CENA: 1200ZŁ*</li>
+            <li>DZWOŃ ŚMIAŁO: <a href="tel:+48783332353">783 33 23 53</a></li>
+            <li>AKTUALNA CENA: 1200ZŁ*</li>
+            <li>DZWOŃ ŚMIAŁO: <a href="tel:+48783332353">783 33 23 53</a></li>
+          </ul>
+        </div>
+        <div class="bg-main-red h-2 w-full"></div>
       </div>
     </div>
     <div
-      class="section h-50 grid w-full grid-cols-3 gap-5 pb-8 pt-16 font-bold text-black lg:flex lg:justify-around lg:gap-0"
+      class="section h-50 grid w-full grid-cols-3 gap-5 pb-12 pt-16 font-bold text-black lg:flex lg:justify-around lg:gap-0"
     >
       <div>
         <div class="flex items-center justify-center">
@@ -123,24 +173,7 @@
         </div>
       </div>
     </div>
-    <div class="text-black">
-      <div class="bg-main-red h-2 w-full"></div>
-      <div
-        class="scroller h-16 w-full overflow-hidden bg-white text-2xl"
-        data-speed="fast"
-      >
-        <ul class="scroller__inner flex h-full w-full items-center font-bold">
-          <li>OSTATNIA CENA: 30ZŁ*</li>
-          <li>OSTATNIA CENA: 30ZŁ*</li>
-          <li>OSTATNIA CENA: 30ZŁ*</li>
-          <li>OSTATNIA CENA: 30ZŁ*</li>
-          <li>OSTATNIA CENA: 30ZŁ*</li>
-          <li>OSTATNIA CENA: 30ZŁ*</li>
-          <li>OSTATNIA CENA: 30ZŁ*</li>
-        </ul>
-      </div>
-      <div class="bg-main-red h-2 w-full"></div>
-    </div>
+    <div class="bg-main-red h-2 w-full"></div>
     <div
       class="section line-height-1-1 grid w-full grid-cols-1 p-12 text-black md:grid-cols-2 lg:flex lg:justify-around"
     >
@@ -151,8 +184,8 @@
           PL
         </div>
         <div class="mb-2 mt-2">
-          Granulat drzewny wytwarzany z naturalnego surowca, bez sztucznych
-          dodatków.
+          Granulat drzewny wytwarzany z naturalnego polskiego surowca, bez
+          sztucznych dodatków.
         </div>
         <div>
           • Spełnia normy A1<br />
@@ -230,14 +263,18 @@
     </div>
     <div
       id="footer"
-      class="bg-main-red flex p-2 sm:h-44 w-full flex-wrap justify-center font-bold sm:justify-between"
+      class="bg-main-red flex w-full flex-wrap justify-center p-2 font-bold sm:h-52 sm:justify-between"
     >
-      <div class="flex h-full items-center sm:w-96">
+      <div class="flex h-full pt-6 pb-4">
         <div class="ml-4">
           Przedsiębiorstwo Produkcyjno Handlowo Usługowe<br />
           SZLACHECKIE
           <div class="flex">
-            <img class="mr-2 h-6 w-6" src="build/images/mail.svg" alt="mailIcon" />
+            <img
+              class="mr-2 h-6 w-6"
+              src="build/images/mail.svg"
+              alt="mailIcon"
+            />
             <a href="mailto:janczarnek806@hotmail.com"
               >janczarnek806@hotmail.com</a
             >
@@ -266,23 +303,25 @@
             />
             Możliwość dostawy na terenie całego kraju!
           </div>
+          <div class="flex sm:hidden">*Cena brutto (zawiera podatek VAT)</div>
           <div class="flex sm:hidden">*Cena może ulec zmianie</div>
         </div>
       </div>
 
-      <div class="ml-auto mr-14 hidden w-44 sm:flex md:mr-6">
-        <div class="h-full w-auto flex-col">
-          <div class="line-height-1-1 h-5/6 pt-4">
+      <div class="ml-auto mr-14 hidden w-56 sm:flex sm:mr-6  pt-6">
+        <div class="w-auto flex-col">
+          <div class="line-height-1-1 h-4/6">
             <div class="text-17px">PO WIĘCEJ INFORMACJI</div>
             <div class="text-40px">ZADZWOŃ</div>
             <div class="text-40px">783 33 23 53</div>
           </div>
-          <div class="flex h-1/6 items-start text-lg">
+          <div class="flex items-start text-sm">
+            *Cena brutto (zawiera podatek VAT)<br />
             *Cena może ulec zmianie
           </div>
         </div>
       </div>
-      <div class="hidden h-full w-44 items-center justify-center md:flex">
+      <div class="hidden h-full w-44 items-center justify-center lg:flex">
         <img class="h-90per" src="build/images/Herb.svg" alt="herby" />
       </div>
     </div>
@@ -305,41 +344,51 @@
       }
     </script>
     <script type="module">
-      
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".section");
+        const headerTop = document.getElementById("header-top");
+        const headerBottom = document.getElementById("header-bottom");
+        const headerContent = document.getElementById("header-content");
 
-      document.addEventListener("DOMContentLoaded", function() {
-    const sections = document.querySelectorAll('.section');
-    const headerTop = document.getElementById('header-top');
-    const headerBottom = document.getElementById('header-bottom');
-    const headerContent = document.getElementById('header-content');
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("show");
                 // entry.target.classList.remove('hidden');
-            }
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          },
+        );
+
+        setTimeout(() => {
+          headerTop.classList.add("show");
+          headerBottom.classList.add("show");
         });
-    }, {
-        threshold: 0.1
-    });
 
-    setTimeout(() => {
-      headerTop.classList.add('show');
-      headerBottom.classList.add('show');
-    });
-
-    setTimeout(() => {
-      headerContent.classList.add('show');
-    }, 1000);
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-});
-window.addEventListener('beforeunload', function() {
-    window.scrollTo(0, 0);
-});
-
+        setTimeout(() => {
+          headerContent.classList.add("show");
+        }, 1000);
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+      });
+      window.addEventListener("beforeunload", function () {
+        window.scrollTo(0, 0);
+      });
     </script>
   </body>
 </html>
+
+<!-- Aktualna cena: 1200zł*
+* Cena brutto (zawiera podatek VAT)
+* Cena może ulec zmianie
+
+Pasek do maina
+Dźwoń śmiało (numer telefoni) do ruszającego się paska
+
+
+Granulat drzewny wytwarzany z naturalnego *polskiego* surowca, bez sztucznych dodatków. -->

@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.5 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -604,6 +604,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -625,10 +629,6 @@ video {
   height: 50%;
 }
 
-.h-1\/6 {
-  height: 16.666667%;
-}
-
 .h-14 {
   height: 3.5rem;
 }
@@ -645,12 +645,12 @@ video {
   height: 5rem;
 }
 
-.h-28 {
-  height: 7rem;
+.h-36 {
+  height: 9rem;
 }
 
-.h-5\/6 {
-  height: 83.333333%;
+.h-4\/6 {
+  height: 66.666667%;
 }
 
 .h-52 {
@@ -685,6 +685,10 @@ video {
   width: 11rem;
 }
 
+.w-52 {
+  width: 13rem;
+}
+
 .w-56 {
   width: 14rem;
 }
@@ -699,6 +703,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .min-w-24 {
@@ -776,13 +784,17 @@ video {
   padding: 0.5rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pl-3 {
@@ -805,8 +817,24 @@ video {
   padding-top: 1rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-2xl {
@@ -819,9 +847,9 @@ video {
   line-height: 2.25rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -990,8 +1018,18 @@ video {
   height: 460px;
 }
 
-.h-100vh-268px {
-  height: calc(100vh - 268px);
+.h-100vh-300px {
+  height: calc(100vh - 300px);
+}
+
+.h-100vh-236px {
+  height: calc(100vh - 236px);
+}
+
+@media (min-width: 1024px) {
+  .lg\:h-100vh-300px {
+    height: calc(100vh - 300px);
+  }
 }
 
 @media (min-width: 640px) {
@@ -1062,6 +1100,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mr-6 {
+    margin-right: 1.5rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1072,6 +1114,10 @@ video {
 
   .sm\:h-44 {
     height: 11rem;
+  }
+
+  .sm\:h-52 {
+    height: 13rem;
   }
 
   .sm\:w-96 {
@@ -1108,8 +1154,16 @@ video {
     margin-right: 0px;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-1\/2 {
