@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mój pellet</title>
     <link rel="stylesheet" href="build/css/style.css" />
-    <link rel="icon" href="build/build/images/Herb.svg" type="image/x-icon">
+    <link rel="icon" href="build/images/Herb.svg" type="image/x-icon">
   </head>
   <body class="font-times text-white">
-    <div id="header" class="w-full">
+    <div id="header-top" class="w-full">
       <div class="h-70px w-full bg-white"></div>
       <div class="bg-main-red h-2 w-full"></div>
       <div class="h-2 w-full bg-white"></div>
@@ -33,7 +33,7 @@
         </div>
       </div>
     </div>
-    <div class="h-60vh min-h-500px flex w-full flex-row pt-10 lg:pt-0">
+    <div id="header-content" class="h-100vh-268px flex w-full flex-row pt-10 lg:pt-0 z-10">
       <div class="flex w-full items-center justify-center lg:w-1/2">
         <div class="font-bold text-black">
           <div class="sm:text-150px text-100px">MÓJ</div>
@@ -42,12 +42,12 @@
           <div class="sm:text-34px text-22px">PREMIUM QUALITY</div>
         </div>
       </div>
-      <div class="hidden w-1/2 translate-y-20 items-end justify-center lg:flex">
+      <div class="hidden w-1/2 translate-y-20 items-end justify-center lg:flex z-10">
         <img class="overflow-hidden" src="build/images/Drzewo.svg" alt="drzewo" />
       </div>
     </div>
     <div
-      class="bg-main-red h-15vh flex min-h-28 w-full justify-center lg:justify-normal"
+      id="header-bottom" class="bg-main-red flex h-28 w-full justify-center lg:justify-normal z-0"
     >
       <div class="mx-4 flex h-full w-20 items-center justify-center">
         <div class="border-3 h-14 w-24 min-w-24 border-black">
@@ -65,7 +65,7 @@
       </div>
     </div>
     <div
-      class="h-50 grid w-full grid-cols-3 gap-5 pb-8 pt-16 font-bold text-black lg:flex lg:justify-around lg:gap-0"
+      class="section h-50 grid w-full grid-cols-3 gap-5 pb-8 pt-16 font-bold text-black lg:flex lg:justify-around lg:gap-0"
     >
       <div>
         <div class="flex items-center justify-center">
@@ -142,7 +142,7 @@
       <div class="bg-main-red h-2 w-full"></div>
     </div>
     <div
-      class="line-height-1-1 grid w-full grid-cols-1 p-12 text-black md:grid-cols-2 lg:flex lg:justify-around"
+      class="section line-height-1-1 grid w-full grid-cols-1 p-12 text-black md:grid-cols-2 lg:flex lg:justify-around"
     >
       <div class="mx-auto w-11/12 py-6 lg:mx-0 lg:w-auto lg:p-6 lg:pl-12">
         <div
@@ -303,6 +303,42 @@
           });
         });
       }
+    </script>
+    <script type="module">
+      window.addEventListener('beforeunload', function() {
+    window.scrollTo(0, 0);
+});
+
+
+      document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.section');
+    const headerTop = document.getElementById('header-top');
+    const headerBottom = document.getElementById('header-bottom');
+    const headerContent = document.getElementById('header-content');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                // entry.target.classList.remove('hidden');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    setTimeout(() => {
+      headerTop.classList.add('show');
+      headerBottom.classList.add('show');
+    }, 1);
+
+    setTimeout(() => {
+      headerContent.classList.add('show');
+    }, 1000);
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
     </script>
   </body>
 </html>
