@@ -897,7 +897,8 @@ video {
 
 .text-100px {
   font-size: 100px;
-  line-height: 200px;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
 .text-55px {
