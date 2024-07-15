@@ -897,7 +897,7 @@ video {
 
 .text-100px {
   font-size: 100px;
-  line-height: 1;
+  line-height: normal;
 }
 
 .text-55px {
@@ -945,6 +945,10 @@ video {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
+}
+
+.min-h-450px{
+  min-height: 450px;
 }
 
 .scroller[data-animated="true"] .scroller__inner {
